@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.balloons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.balloon {
+    width: 130px;
+    height: 150px;
+    background-color: #f77;
+    border-radius: 50%;
+    position: relative;
+    margin: 10px;
+    animation: float 4s infinite;
+}
+
+.text {
+    font-size: 36px;
+    color: #444;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
