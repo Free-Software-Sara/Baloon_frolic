@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #e0e0e0;
+    background-color:transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.mirrored-gif {
+    transform: scaleX(-1);
+}
 .balloon {
     width: 130px;
     height: 150px;
@@ -25,7 +27,17 @@ body {
     border-radius: 50%;
     position: relative;
     margin: 10px;
-    animation: float 4s infinite;
+    animation: float 3s infinite;
+}
+
+.string {
+    width: 2px;
+    height: 200px;
+    background-color: #777;
+    position: relative;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-1px);
 }
 
 .text {
