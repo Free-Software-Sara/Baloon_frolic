@@ -1,4 +1,4 @@
-body {
+ body {
     margin: 0;
     padding: 0;
     background-color: #e0e0e0;
@@ -33,6 +33,7 @@ body {
     color: #444;
     font-weight: bold;
     margin-top: 20px;
+    animation: float 4s infinite;
 }
 
 @keyframes float {
@@ -45,4 +46,27 @@ body {
     100% {
         transform: translateY(0);
     }
-}
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
