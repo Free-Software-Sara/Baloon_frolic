@@ -1,12 +1,30 @@
 body {
     margin: 0;
     padding: 0;
-    background-color:#EAD7BB;
+    background-color: #e0e0e0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
+.balloon_set{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    animation: float 4s infinite;
+}
+
+.string{
+    width: 2px;
+    height: 100px;
+    background-color: #444;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 .container {
     text-align: center;
@@ -17,27 +35,14 @@ body {
     justify-content: center;
     align-items: center;
 }
-.mirrored-gif {
-    transform: scaleX(-1);
-}
+
 .balloon {
     width: 130px;
     height: 150px;
     background-color: #f77;
     border-radius: 50%;
     position: relative;
-    margin: 10px;
-    animation: float 3s infinite;
-}
-
-.string {
-    width: 2px;
-    height: 200px;
-    background-color: #777;
-    position: relative;
-    top: 150px;
-    left: 50%;
-    transform: translateX(-1px);
+    margin-inline: 10px;
 }
 
 .text {
