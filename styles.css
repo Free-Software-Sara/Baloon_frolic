@@ -7,6 +7,24 @@ body {
     align-items: center;
     height: 100vh;
 }
+.balloon_set{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    animation: float 4s infinite;
+}
+
+.string{
+    width: 2px;
+    height: 100px;
+    background-color: #444;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 .container {
     text-align: center;
@@ -24,8 +42,7 @@ body {
     background-color: #f77;
     border-radius: 50%;
     position: relative;
-    margin: 10px;
-    animation: float 4s infinite;
+    margin-inline: 10px;
 }
 
 .text {
